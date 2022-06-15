@@ -7,12 +7,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR FIREBASE API KEY",
-  authDomain: "YOUR FIREBASE AUTHDOMAIN",
-  projectId: "YOUR FIREBASE PROJECTID",
-  storageBucket: "YOUR FIREBASE STORAGE BUCKET",
-  messagingSenderId: "YOUR FIREBASE MESSAGESENDER ID",
-  appId: "YOUR FIREBASE APPID"
+  apiKey: "AIzaSyDoVPDYioVDielOHiYM13EZ5Mxgw5Y-2JA",
+  authDomain: "online-examination-porta-a7074.firebaseapp.com",
+  projectId: "online-examination-porta-a7074",
+  storageBucket: "online-examination-porta-a7074.appspot.com",
+  messagingSenderId: "147371085271",
+  appId: "1:147371085271:web:9cf2f1069453578cb6cf92"
 };
 
 // Initialize Firebase
