@@ -1,5 +1,4 @@
 import React from 'react';
-/* import { Link } from 'react-router-dom'; */
 import { UserAuth } from '../context/AuthContext';
 import Signin from '../pages/Signin';
 import { Navbar, Container, Button } from 'react-bootstrap'
