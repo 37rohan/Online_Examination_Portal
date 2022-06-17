@@ -23,12 +23,13 @@ const NavAdmin = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#addfaculty">Add Faculties</Nav.Link>
-                            <Nav.Link href='#addstudent'>Add Students</Nav.Link>
+                            <Button className='btn' href="/addfaculty">Add Faculties</Button>
+                            <Button className='btn' href='/addstudent'>Add Students</Button >
                         </Nav>
                         <Nav>
                             <NavDropdown title="Profile" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#M">MATH</NavDropdown.Item>
+                                <NavDropdown.Item href="#profile">Edit Profile</NavDropdown.Item> <hr /> 
+                                <NavDropdown.Item href="#profile">Profile</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="#Contact">
                                 Contact Us

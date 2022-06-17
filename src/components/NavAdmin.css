@@ -2,3 +2,8 @@
     background-color: #212429 !important;
     border-color: #212429 !important;
 }
+
+.btn {
+    padding: 10px;
+    transition: none !important;
+}
