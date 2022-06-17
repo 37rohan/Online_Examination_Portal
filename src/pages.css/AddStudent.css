@@ -1,0 +1,15 @@
+.h5 {
+    margin-top: 30px !important;
+    margin-bottom: 10px !important;
+}
+
+.addSTUD {
+    margin-top: 30px;
+}
+
+.btn3 {
+    background-color: #ffffff !important;
+    color: black !important;
+    border-color: #ffffff !important;
+    pointer-events: none;
+}
