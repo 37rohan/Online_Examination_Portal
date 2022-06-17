@@ -2,9 +2,11 @@ import React from 'react';
 /* import { Link } from 'react-router-dom'; */
 import { UserAuth } from '../context/AuthContext';
 import Signin from '../pages/Signin';
+import { Navbar, Container, Button } from 'react-bootstrap'
+import '../components/NavAdmin.css'
 
 
-const Navbar = () => {
+const Nav = () => {
   const { user, logOut } = UserAuth();
 
   const handleSignOut = async () => {
@@ -16,17 +18,20 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex justify-between bg-gray-200 w-full p-4'>
-      <h1 className='text-center text-2xl font-bold'>
-        Online Examination Portal
-      </h1>
-      {user?.displayName ? (
-        <button onClick={handleSignOut}>Logout</button>
-      ) : (
-        <Signin />
-      )}
-    </div>
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">Online Examination Portal</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+        </Navbar.Collapse>
+        {user?.displayName ? (
+          <Button className='btn' onClick={handleSignOut}>Logout</Button>
+        ) : (
+          <Signin />
+        )}
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Nav;

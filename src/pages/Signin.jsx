@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { GoogleButton } from 'react-google-button';
+import { Button } from 'react-bootstrap';
+import '../components/NavAdmin.css'
 import { UserAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,7 +23,9 @@ const Signin = () => {
   }, [user]);
 
   return (
-    <GoogleButton onClick={handleGoogleSignIn} />
+    <Button className='btn' onClick={handleGoogleSignIn}>
+      SignIn
+    </Button>
   );
 };
 
