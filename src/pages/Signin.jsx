@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-import '../components/NavAdmin.css'
+import '../pages.css/NavAdmin.css'
 import { UserAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
