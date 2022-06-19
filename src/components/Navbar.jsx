@@ -2,7 +2,7 @@ import React from 'react';
 import { UserAuth } from '../context/AuthContext';
 import Signin from '../pages/Signin';
 import { Navbar, Container, Button } from 'react-bootstrap'
-import '../components/NavAdmin.css'
+import '../pages.css/NavAdmin.css';
 
 
 const Nav = () => {
