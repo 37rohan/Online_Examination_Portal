@@ -1,5 +1,5 @@
 import React from "react";
-import { Table } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
 import database from "../firebaseAuth";
 import { ref, onValue } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
 
@@ -13,7 +13,7 @@ class RealtimeData extends React.Component {
 
 
     componentDidMount() {
-        const starCountRef = ref(database, 'facultyData/');
+        const starCountRef = ref(database, 'examData/');
         onValue(starCountRef, (snapshot) => {
             let records = [];
             snapshot.forEach(childSnapshot => {
@@ -32,7 +32,7 @@ class RealtimeData extends React.Component {
                     <tr>
                         <th>
                             <h2>
-                                List of Added Faculties
+                                List of Exams
                             </h2>
                         </th>
                     </tr>
@@ -41,9 +41,10 @@ class RealtimeData extends React.Component {
                     <tr>
                         <th>ID</th>
                         {/* <th>Username</th> */}
-                        <th>firstName</th>
-                        <th>lastName</th>
-                        <th>emailId</th>
+                        <th>Exam Name</th>
+                        <th>Exam Date</th>
+                        <th>Exam Level</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
 
@@ -53,9 +54,10 @@ class RealtimeData extends React.Component {
                             <tr>
                                 <td> {index} </td>
                                 {/* <td>{row.key} </td> */}
-                                <td>{row.data.firstName} </td>
-                                <td>{row.data.lastName}  </td>
-                                <td>{row.data.emailId}   </td>
+                                <td>{row.data.examName}  </td>
+                                <td>{row.data.examDate}  </td>
+                                <td>{row.data.examLevel} </td>
+                                <td>{[<Button>Delete</Button>,<Button>Update</Button>]} </td>
                             </tr>
                         )
                     }))}

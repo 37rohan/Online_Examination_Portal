@@ -26,6 +26,7 @@ const NavAdmin = () => {
                             <Button className='btn' href="/addfaculty">Add Faculties</Button>
                             <Button className='btn' href='/addstudent'>Add Students</Button >
                             <Button className='btn' href='/exam'>Schedule Exam</Button >
+                            <Button className='btn' href='/addQue'>Add Question</Button >
                         </Nav>
                         <Nav>
                             <NavDropdown title="Profile" id="collasible-nav-dropdown">

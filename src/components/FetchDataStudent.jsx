@@ -1,7 +1,7 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import database from "../firebaseAuth";
-import { ref, onValue } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js";
+import { ref, onValue } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-database.js";
 
 class RealtimeData extends React.Component {
     constructor(props) {
@@ -29,16 +29,16 @@ class RealtimeData extends React.Component {
         return (
             <Table>
                 <thead>
-                    <center>
-                        <b>
-                            List of Added Students
-                        </b>
-                    </center>
+                    <tr>
+                        <th>
+                            <h2>List of Added Students</h2>
+                        </th>
+                    </tr>
                 </thead>
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Username</th>
+                        {/* <th>Username</th> */}
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Email Id</th>
@@ -48,11 +48,11 @@ class RealtimeData extends React.Component {
                 </thead>
 
                 <tbody>
-                    {this.state.tableData.map(((row, index) => {
+                    {this.state.tableData.map(((row, index = 1) => {
                         return (
                             <tr>
                                 <td> {index} </td>
-                                <td>{row.key} </td>
+                                {/* <td>{row.key} </td> */}
                                 <td>{row.data.firstName} </td>
                                 <td>{row.data.lastName}  </td>
                                 <td>{row.data.emailId}   </td>
