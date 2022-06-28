@@ -22,12 +22,12 @@ const Nav2 = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href='#Schedule'>Exam Schedule</Nav.Link>
+                            {/* <Nav.Link href='#Schedule'>Exam Schedule</Nav.Link>
                             <NavDropdown title="Subject" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#M">MATH</NavDropdown.Item><hr />
                                 <NavDropdown.Item href="#E">ENGLISH</NavDropdown.Item><hr />
                                 <NavDropdown.Item href="#S">SCIENCE</NavDropdown.Item>
-                            </NavDropdown>
+                            </NavDropdown> */}
                         </Nav>
                         <Nav>
                             <NavDropdown title="Account" id="collasible-nav-dropdown">

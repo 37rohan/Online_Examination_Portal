@@ -9,6 +9,7 @@ import Admin from './pages/Admin';
 import AddFaculty from './pages/AddFacul';
 import AddStudent from './pages/AddStudent';
 import ExamSchedule from './pages/ExamSchedule';
+import AddQue from './pages/AddQue';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/addfaculty' element={ <AddFaculty />} />
           <Route path='/addstudent' element={<Protected> <AddStudent /> </Protected>} />
           <Route path='/exam' element={<Protected> <ExamSchedule /> </Protected>} />
+          <Route path='/addque' element={<Protected> <AddQue /> </Protected>} />
         </Routes>
       </AuthContextProvider>
     </div>

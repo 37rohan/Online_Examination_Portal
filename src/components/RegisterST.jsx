@@ -86,9 +86,9 @@ export default function RegisterST() {
                         <Form.Group className="mb-3" controlId="formGridAddress1">
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="email"
-                                placeholder="example@gmail.com"
-                                value={userData.emailId}
-                                onChange={postUserData}
+                            placeholder="example@gmail.com"
+                            value={userData.emailId}
+                            onChange={postUserData}
                                 name="emailId" />
                         </Form.Group>
 

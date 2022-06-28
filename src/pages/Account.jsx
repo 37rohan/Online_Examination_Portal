@@ -5,7 +5,7 @@ const Account = () => {
   return (
     <div>
       <Nav2 />
-      asdkjodas
+      
     </div>
   );
 };
